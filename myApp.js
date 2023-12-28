@@ -32,15 +32,15 @@ const createAndSavePerson = (done) => {
   })
 };
 
-let manyPeople = new Person([
-  {name: "Tore"},
-  {name: "Sofia"},
-  {name: "Vilde"}
-])
 
 const createManyPeople = (arrayOfPeople, done) => {
+  arrayOfPeople = new Person([
+    {name: "Tore"},
+    {name: "Sofia"},
+    {name: "Vilde"}
+  ])
   Person.create(arrayOfPeople)
-  done(null /*, data*/);
+  done()
 };
 
 const findPeopleByName = (personName, done) => {
