@@ -40,7 +40,7 @@ const createManyPeople = (arrayOfPeople, done) => {
     {name: "Vilde"}
   ])
   Person.create(arrayOfPeople)
-  done(null)
+  done(null, data)
 };
 
 const findPeopleByName = (personName, done) => {
