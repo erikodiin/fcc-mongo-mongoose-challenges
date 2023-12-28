@@ -26,7 +26,7 @@ erik.favoriteFoods = ["pizza", "taco"]
 const createAndSavePerson = (done) => {
   erik.save((err, data) => {
     if (err) {
-      return done(err)
+      return console.error(err)
     }
     done(null, data);
   })
